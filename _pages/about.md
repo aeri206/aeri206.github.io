@@ -2,25 +2,29 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: 
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: aeri_pic.png
   image_circular: false # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    Email <a href="mailto:archo@hcil.snu.ac.kr"><i class="fas fa-envelope""></i></a><br> 
+# Curriculum Vitae <a href=""><i class="ai ai-cv"></i></a>
 
-news: true  # includes a list of news items
+# news: true  # includes a list of news items
+working: true
+service: true
+teaching: true
 latest_posts: true  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
+experiences: true
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi. I’m a Ph.D. student at the [Human-Computer Interaction Lab](http://hcil.snu.ac.kr/) under the supervision of professor [Jinwook Seo](http://hcil.snu.ac.kr/people/jinwook-seo). 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My research interests include information visualization, interactive data analysis, and human-computer interaction. I am currently working on the development of interactions and a visual analytics system for the analysis of high-dimensional data. 
+
+I received my B.S. degree in Computer Science from the Seoul National University in 2021.

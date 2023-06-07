@@ -42,20 +42,26 @@ layout: default
 
           <!-- News -->
           {% if page.news and site.announcements.enabled -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
+            <h2><a id="news" href="{{ '/#news' | relative_url }}" style="color: inherit;">news</a></h2>
             {%- include news.html limit=true %}
           {%- endif %}
 
           <!-- Latest posts -->
-          {% if page.latest_posts -%}
+          <!-- {% if page.latest_posts -%}
             <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
             {%- include latest_posts.html %}
-          {%- endif %}
+          {%- endif %} -->
 
           <!-- Selected papers -->
-          {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
+          <!-- {% if page.selected_papers -%}
+            <h2><a id="publications" href="{{ '/#publications' | relative_url }}" style="color: inherit;">publications</a></h2>
             {%- include selected_papers.html %}
+          {%- endif %} -->
+
+          <!-- Educations + Expericnes -->
+          {% if page.experiences -%}
+            <h2><a id="experiences" href="{{ '/#experiences' | relative_url }}" style="color: inherit;">Experiences</a></h2>
+            {%- include experiences.html %}
           {%- endif %}
 
           <!-- Social -->
