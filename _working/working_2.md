@@ -8,4 +8,4 @@ related_posts: false
 ---
 
 Undergraduate Research Intern <br/>
-Human-Centered Computing Lab, <b>Seoul National University</b>
+[Human-Centered Computer Systems Lab](https://hcs.snu.ac.kr/), <b>Seoul National University</b>

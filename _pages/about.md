@@ -27,4 +27,4 @@ Hi. I’m a Ph.D. student at the [Human-Computer Interaction Lab](http://hcil.sn
 
 My research interests include information visualization, interactive data analysis, and human-computer interaction. I am currently working on the development of interactions and a visual analytics system for the analysis of high-dimensional data. 
 
-I received my B.S. degree in Computer Science from the Seoul National University in 2021.
+I received my B.S. degree in [Computer Science and Enginnering](https://cse.snu.ac.kr/) from the [Seoul National University](https://www.snu.ac.kr/) in 2021.
