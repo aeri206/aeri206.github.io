@@ -7,4 +7,4 @@ related_posts: false
 ---
 
 Samsung DS2 Program, Seoul National University<br />
-Data visualization
+Data Visualization
