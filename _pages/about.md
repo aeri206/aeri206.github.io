@@ -22,7 +22,7 @@ experiences: true
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi. I’m a Ph.D. student at the [Human-Computer Interaction Lab](http://hcil.snu.ac.kr/) under the supervision of Professor [Jinwook Seo](http://hcil.snu.ac.kr/people/jinwook-seo). 
+Hi. I’m a Ph.D. student at the [Human-Computer Interaction Lab](http://hcil.snu.ac.kr/) at Seoul National University, under the supervision of Professor [Jinwook Seo](http://hcil.snu.ac.kr/people/jinwook-seo). 
 
 
 My research interests include information visualization, interactive data analysis, and human-computer interaction. I am currently working on developing interactions and a visual analytics system to analyze high-dimensional data.
