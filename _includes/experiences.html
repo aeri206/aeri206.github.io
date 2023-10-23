@@ -1,4 +1,4 @@
-<h5>Working</h5>
+<h4>Working</h4>
 
     <div class="news">
         {% if site.working != blank -%}
@@ -30,6 +30,41 @@
         <p>No news so far...</p>
     {%- endif %}
     </div>
+
+    
+    <h4>Talks</h4>
+
+    <div class="news">
+        {% if site.talk != blank -%}
+        {%- assign news_size = site.talk | size -%}
+        <div class="table-responsive" {% if include.limit and site.talk.scrollable and news_size > 3 %}style="max-height: 60vw"{% endif %}>
+        <table class="table table-sm table-borderless">
+        {%- assign news = site.talk | reverse | sort: "date" -%}
+        {% if include.limit and site.talk.limit %}
+        {% assign news_limit = site.talk.limit %}
+        {% else %}
+        {% assign news_limit = news_size %}
+        {% endif %}
+        {% for item in news limit: news_limit %}
+            <tr>
+              <th scope="row" style="width:160px">{{ item.start }}{% if item.end %} - {{ item.end }}{% endif %}</th>
+              {{ item.year}}</th>
+            <td>
+                {% if item.inline -%}
+                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                {%- else -%}
+                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                {%- endif %}
+            </td>
+            </tr>
+        {%- endfor %}
+        </table>
+        </div>
+    {%- else -%}
+        <p>No news so far...</p>
+    {%- endif %}
+    </div>
+
 
 <h4>Service</h4>
 
