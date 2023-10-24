@@ -25,6 +25,6 @@ social: true  # includes social icons at the bottom of the page
 Hi. I’m a Ph.D. student at the [Human-Computer Interaction Lab](http://hcil.snu.ac.kr/) at Seoul National University, under the supervision of Professor [Jinwook Seo](http://hcil.snu.ac.kr/people/jinwook-seo). 
 
 
-My research interests include information visualization, interactive data analysis, and human-computer interaction. I am currently working on developing interactions and a visual analytics system to analyze high-dimensional data.
+My research interests include information visualization, interactive data analysis, and human-computer interaction. I am currently working on developing interactive methods and a visual analytics system to assist users in the analysis of high-dimensional data, with a particular emphasis on enabling interactive non-linear dimensionality reduction.
 
 I received my B.S. in [Computer Science and Engineering](https://cse.snu.ac.kr/) from [Seoul National University](https://www.snu.ac.kr/) in 2021.

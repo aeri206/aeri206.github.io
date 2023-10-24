@@ -7,7 +7,7 @@ inline: true
 related_posts: false
 ---
 
-Speaker at Naver Corp's Tech Talk, on <b>Interactive Exploration of Nonlinear Dimensionality Reduction</b>
+Speaker, Tech Talk at Naver Corp, on <b>Interactive Exploration of Nonlinear Dimensionality Reduction</b>
 
 <!-- Software Engineering Intern <br/>
 Web UI Developement for Web Browser, <b>Naver Corp.</b> -->
