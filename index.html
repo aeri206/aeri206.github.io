@@ -114,111 +114,111 @@
     <!-- Content -->
     <div class="container mt-5">
       
-        <!-- about.html -->
-      <div class="post">
-        <header class="post-header">
-          <h1 class="post-title">
-           <span class="font-weight-bold">Aeri</span>  Cho
-          </h1>
-          <p class="desc"></p>
-        </header>
+        <!-- about.html - Redesigned compact layout -->
+<div class="post">
+  <!-- Hero Section: Name + Intro + Photo in one compact row -->
+  <div class="about-hero" style="display: flex; align-items: center; gap: 3rem;">
+    <div class="about-profile" style="display: flex; flex-direction: column; justify-content: center; align-items: center; flex-shrink: 0; width: 280px;">
 
-        <article>
-          <div class="profile float-right">
-
-              <figure style="margin: 0">
+        <div style="display: inline-block; line-height: 0; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'; this.querySelector('img').style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)';" onmouseout="this.style.transform='scale(1)'; this.querySelector('img').style.boxShadow='0 4px 12px rgba(0, 0, 0, 0.15)';">
+          <div style="line-height: 0;">
+            <figure style="margin: 0">
 
   <picture>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/aeri_pic.png" class="img-fluid z-depth-1 rounded" width="auto" height="auto" alt="aeri_pic.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-            <div class="address">
-              Email <a href="mailto:archo@hcil.snu.ac.kr"><i class="fas fa-envelope"></i></a><br> 
-
-            </div>
-          </div>
-
-          <div class="clearfix">
-            <p>Hi. I’m a Ph.D. student at the <a href="http://hcil.snu.ac.kr/" rel="external nofollow noopener" target="_blank">Human-Computer Interaction Lab</a> at Seoul National University, under the supervision of Professor <a href="http://hcil.snu.ac.kr/people/jinwook-seo" rel="external nofollow noopener" target="_blank">Jinwook Seo</a>.</p>
-
-<p>My research interests include information visualization, interactive data analysis, and human-computer interaction. I am currently working on developing interactive methods and a visual analytics system to assist users in the analysis of high-dimensional data, with a particular emphasis on enabling interactive non-linear dimensionality reduction.</p>
-
-<p>I received my B.S. in <a href="https://cse.snu.ac.kr/" rel="external nofollow noopener" target="_blank">Computer Science and Engineering</a> from <a href="https://www.snu.ac.kr/" rel="external nofollow noopener" target="_blank">Seoul National University</a> in 2021.</p>
-
-          </div>
-
-          <!-- News -->
-          
-
-          <!-- Latest posts -->
-          <!-- <h2><a href="/blog/" style="color: inherit;">latest posts</a></h2>
-          <div class="news">
-            <div class="table-responsive" style="max-height: 60vw">
-              <table class="table table-sm table-borderless">
-              
-                <tr>
-                  <th scope="row">May 12, 2023</th>
-                  <td>
-                    <a class="news-title" href="/blog/2023/custom-blockquotes/">a post with custom blockquotes</a>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Apr 25, 2023</th>
-                  <td>
-                    <a class="news-title" href="/blog/2023/sidebar-table-of-contents/">a post with table of contents on a sidebar</a>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Apr 25, 2023</th>
-                  <td>
-                    <a class="news-title" href="/blog/2023/audios/">a post with audios</a>
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </div>
- -->
-
-          <!-- Selected papers -->
-          <!-- <h2><a id="publications" href="/#publications" style="color: inherit;">publications</a></h2>
-          <div class="publications">
-            <ol class="bibliography"><li><!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
-<figure style="margin: 0">
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/cho2025lime.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="cho2025lime.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/aeri_pic.png" class="img-fluid z-depth-1 rounded" width="auto" height="auto" alt="assets/img/aeri_pic.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 </div>
+        </div>
+        <style>
+          .about-profile img {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: box-shadow 0.3s ease;
+          }
+        </style>
+      
+      <div class="address" style="margin-top: 1rem; text-align: center;">
+        Email <a href="mailto:archo@hcil.snu.ac.kr"><i class="fas fa-envelope"></i></a>
 
-        <!-- Entry bib key -->
-        <div id="cho2025lime" class="col-sm-8">
+      </div>
+    </div>
+    
+    <div class="about-content" style="flex: 1; min-width: 0;">
+      <header class="about-header">
+        <h1 class="about-name">
+          <span class="font-weight-bold">Aeri</span>  Cho
+        </h1>
+        
+      </header>
+
+      <article class="about-intro">
+        <p>Hi. I’m a Ph.D. student at the <a href="http://hcil.snu.ac.kr/" rel="external nofollow noopener" target="_blank">Human-Computer Interaction Lab</a> at Seoul National University, advised by Professor <a href="http://hcil.snu.ac.kr/people/jinwook-seo" rel="external nofollow noopener" target="_blank">Jinwook Seo</a>.</p>
+
+<p>My research focuses on making complex fields like high-dimensional data and model explainability more human-friendly and accessible through interactive visualization and intuitive data interactions, enabling people to gain meaningful insights.</p>
+
+<p>I received my B.S. in <a href="https://cse.snu.ac.kr/" rel="external nofollow noopener" target="_blank">Computer Science and Engineering</a> from <a href="https://www.snu.ac.kr/" rel="external nofollow noopener" target="_blank">Seoul National University</a> in 2021.</p>
+
+        
+        <!-- Research Interests Highlights -->
+        <div class="research-interests" style="margin-top: 1.5rem;">
+          <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">Research Interests</h3>
+          <div class="interests-grid">
+            
+            <div class="interest-tag">Interactive Data Analysis</div>
+            
+            <div class="interest-tag">HCI</div>
+            
+            <div class="interest-tag">Visual Analytics</div>
+            
+            <div class="interest-tag">Explainable AI</div>
+            
+            <div class="interest-tag">High-Dimensional Data</div>
+            
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <!-- Selected Publications Section -->
+  <section class="selected-section publications-section">
+    <h2 class="section-heading">
+      <span>Selected Publications</span>
+      <a class="view-all" href="/publications/">View all publications→</a>
+    </h2>
+          <div class="publications">
+            <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+      <!-- Entry bib key -->
+      <div id="cho2025lime" class="publication-content" style="display: flex; gap: 1rem; align-items: flex-start;">
+        <div class="publication-preview" style="flex-shrink: 0; width: 200px; max-width: 200px; height: 200px; max-height: 200px; overflow: hidden; border-radius: 4px; position: relative;">
+          <img src="/assets/img/publication_preview/cho2025lime.png" alt="LIME &amp; SHAP Explained: From Computation to Interpretation" style="width: 100%; height: 100%; object-fit: cover; object-position: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"><div class="abbr-overlay"><abbr class="badge">VISxAI</abbr></div>
+</div>
+        <div style="flex: 1; min-width: 0;">
+        <div class="abbr">
+<span class="pub-type workshop">Workshop</span>
+        </div>
         <!-- Title -->
-        <div class="title">LIME &amp; SHAP Explained: From Computation to Interpretation</div>
+        <div class="title">
+            LIME &amp; SHAP Explained: From Computation to Interpretation
+        </div>
         <!-- Author -->
         <div class="author">
         
 
-        <em>Aeri Cho</em>, Jeongmin Rhee, Seokhyeon Park, and Jinwook Seo</div>
+        <strong>Aeri Cho</strong>, Jeongmin Rhee, Seokhyeon Park, and Jinwook Seo</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>Workshop on Visualization for AI Explainability (VISxAI) (at IEEE VIS)</em>, Nov 2025
+          <em><a href="https://visxai.io/" target="_blank" rel="noopener noreferrer">Workshop on Visualization for AI Explainability (VISxAI) (at IEEE VIS)</a></em>, Nov 2025
         </div>
         <div class="periodical">
           
@@ -235,39 +235,33 @@
           
         </div>
       </div>
-
+</li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
-<figure style="margin: 0">
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/towards2025cho.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="towards2025cho.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
+      <!-- Entry bib key -->
+      <div id="cho2025towards" class="publication-content" style="display: flex; gap: 1rem; align-items: flex-start;">
+        <div class="publication-preview" style="flex-shrink: 0; width: 200px; max-width: 200px; height: 200px; max-height: 200px; overflow: hidden; border-radius: 4px; position: relative;">
+          <img src="/assets/img/publication_preview/towards2025cho.png" alt="Towards More Explainable Nonlinear Dimensionality Reduction: A Feature-Driven Interaction Approach" style="width: 100%; height: 100%; object-fit: cover; object-position: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"><div class="abbr-overlay"><abbr class="badge">IEEE TVCG</abbr></div>
 </div>
-
-        <!-- Entry bib key -->
-        <div id="cho2025towards" class="col-sm-8">
+        <div style="flex: 1; min-width: 0;">
+        <div class="abbr">
+<span class="pub-type journal">Journal</span>
+        </div>
         <!-- Title -->
-        <div class="title">Towards More Explainable Nonlinear Dimensionality Reduction: A Feature-Driven Interaction Approach</div>
+        <div class="title">
+            Towards More Explainable Nonlinear Dimensionality Reduction: A Feature-Driven Interaction Approach
+        </div>
         <!-- Author -->
         <div class="author">
         
 
-        <em>Aeri Cho</em>, Hyeon Jeon, Kiroong Choe, Seokhyeon Park, and Jinwook Seo</div>
+        <strong>Aeri Cho</strong>, Hyeon Jeon, Kiroong Choe, Seokhyeon Park, and Jinwook Seo</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>IEEE Transactions on Visualization and Computer Graphics</em>, Nov 2025
+          <em><a href="https://ieeexplore.ieee.org/document/11205332" target="_blank" rel="noopener noreferrer">IEEE Transactions on Visualization and Computer Graphics</a></em>, Nov 2025
         </div>
         <div class="periodical">
           
@@ -290,37 +284,27 @@
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">IEEE PacificVis</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="kim2025automated" class="col-sm-8">
+      <!-- Entry bib key -->
+      <div id="kim2025automated" class="publication-content" style="display: flex; gap: 1rem; align-items: flex-start;">
+        <div style="flex: 1; min-width: 0;">
+        <div class="abbr">
+<abbr class="badge">IEEE PacificVis</abbr><span class="pub-type conference">Conference</span>
+        </div>
         <!-- Title -->
-        <div class="title">Automated Pipeline for Detecting and Analyzing Misleading Visual Elements</div>
+        <div class="title">
+            Automated Pipeline for Detecting and Analyzing Misleading Visual Elements
+        </div>
         <!-- Author -->
         <div class="author">
         
 
-        Min Hyeong Kim, Yumin Song, Yungun Kim, <em>Aeri Cho</em>, Soohyun Lee, Hyeon Jeon, and
-          <span class="more-authors" title="click to view 1 more author" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '1 more author' ? 'Jinwook Seo' : '1 more author';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">1 more author</span>
-</div>
+        Min Hyeong Kim, Yumin Song, Yungun Kim, <strong>Aeri Cho</strong>, Soohyun Lee, Hyeon Jeon, and Jinwook Seo</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>In 2025 IEEE 18th Pacific Visualization Conference (PacificVis)</em>, Nov 2025
+          <em><a href="https://ieeexplore.ieee.org/abstract/document/11021031" target="_blank" rel="noopener noreferrer">2025 IEEE 18th Pacific Visualization Conference (PacificVis)</a></em>, Nov 2025
         </div>
         <div class="periodical">
           
@@ -341,188 +325,212 @@
         </div>
       </div>
 </li>
-          </article>
-</div>
- --&gt;
+</ol>
+          </div>
 
-          <!-- Educations + Expericnes -->
-          <h2><a id="experiences" href="/#experiences" style="color: inherit;">Experiences</a></h2>
-<h4>Working</h4>
+  </section>
 
-    <div class="news">
-        <div class="table-responsive">
-        <table class="table table-sm table-borderless">
-        
-            <tr>
-            <th scope="row" style="width:160px">Jul - Aug, 2019</th>
-                
-            <td>
-                Software Engineering Intern <br>
-Web UI Developement for Web Browser, <b>Naver Corp.</b>
+  <!-- Selected Projects Section -->
+  <!-- <section class="selected-section">
+    <h2 class="section-heading">
+      <a id="projects" href="/projects/">Selected Projects</a>
+      <span class="view-all">View all →</span>
+    </h2>
+    <div class="selected-projects-grid">
+    </div>
+  </section> -->
 
-            </td>
-            </tr>
-            <tr>
-            <th scope="row" style="width:160px">Jan - Feb, 2020</th>
-                
-            <td>
-                Undergraduate Research Intern <br>
+  <!-- Compact Experiences Section -->
+  <section class="experiences-compact">
+    <h2 class="section-heading">
+      <a id="experiences" href="/#experiences">Experiences</a>
+    </h2>
+<div class="experiences-grid">
+  <!-- Working Experience -->
+  <div class="experience-category">
+    <h3 class="category-title">Work</h3>
+    <div class="experience-list">
+      <div class="experience-item">
+        <span class="experience-date">Jan - Feb 2020</span>
+        <div class="experience-content">
+          Undergraduate Research Intern <br>
 <a href="https://hcs.snu.ac.kr/" rel="external nofollow noopener" target="_blank">Human-Centered Computer Systems Lab</a>, <b>Seoul National University</b>
 
-            </td>
-            </tr>
-        </table>
-        </div>
-    </div>
-
-    
-    <h4>Talks</h4>
-
-    <div class="news">
-        <div class="table-responsive">
-        <table class="table table-sm table-borderless">
-        
-            <tr>
-              <th scope="row" style="width:160px">Jun, 2023</th>
-              
-            <td>
-                Speaker, Tech Talk at Naver Corp, on <b>Interactive Exploration of Nonlinear Dimensionality Reduction</b>
-
-<!-- Software Engineering Intern <br/>
-Web UI Developement for Web Browser, <b>Naver Corp.</b> -->
-
-            </td>
-            </tr>
-            <tr>
-              <th scope="row" style="width:160px">Oct, 2023</th>
-              
-            <td>
-                Presenter, IEEE VIS 2023, Melbourne, on the research paper <b>ZADU: A Python Library for Evaluating the Reliability of Dimensionality Reduction Embeddings</b>
-
-<!-- Software Engineering Intern <br/>
-Web UI Developement for Web Browser, <b>Naver Corp.</b> -->
-
-            </td>
-            </tr>
-            <tr>
-              <th scope="row" style="width:160px">Oct, 2024</th>
-              
-            <td>
-                Presenter, KoreaVis 2024, Seoul, on the research <b>Towards More Explainable Nonlinear Dimensionality Reduction: A Feature-Driven Interactive Approach</b>
-
-<!-- Software Engineering Intern <br/>
-Web UI Developement for Web Browser, <b>Naver Corp.</b> -->
-
-            </td>
-            </tr>
-        </table>
-        </div>
-    </div>
-
-
-<h4>Service</h4>
-
-<div class="news">
-        <div class="table-responsive">
-          <table class="table table-sm table-borderless">
-          
-            <tr>
-              <th scope="row" style="width:160px">Apr, 2023</th>
-                
-              <td>
-                Student Volunteer, <b>IEEE PacificVis 2023</b>
-
-              </td>
-            </tr>
-          </table>
         </div>
       </div>
-<h4>Teaching</h4>
-<div class="news">
-  <h6 style="padding-top: 10px"><b>Teaching Assistant</b></h6>
-  <div class="table-responsive">
-    <table class="table table-sm table-borderless">
-    
-      <tr>
-        <th scope="row" style="width:160px">
-          
-            2021 Fall<br>
-            <!--  -->
-          
-        </th>
-        <td>
-          Digital Computer Concept and Practice, Seoul National University<br>
-Python Programming
+      <div class="experience-item">
+        <span class="experience-date">Jul - Aug 2019</span>
+        <div class="experience-content">
+          Software Engineering Intern <br>
+Web UI Developement for Web Browser, <b>Naver Corp.</b>
 
-        </td>
-      </tr>
-      <tr>
-        <th scope="row" style="width:160px">
-          
-            2022 - 2025 Spring<br>
-            <!--  -->
-          
-        </th>
-        <td>
-          Samsung DS<sup>2</sup> Program, Seoul National University<br>
-Data Visualization
+        </div>
+      </div>
+      <div class="experience-item">
+        <span class="experience-date">Aug - Dec 2018</span>
+        <div class="experience-content">
+          Undergraduate Research Opportunities Program (UROP) <br>
+<a href="https://ids.snu.ac.kr/" rel="external nofollow noopener" target="_blank">Intelligent Data System Lab</a>, <b>Seoul National University</b>
 
-        </td>
-      </tr>
-      <tr>
-        <th scope="row" style="width:160px">
-          
-            2022 Spring<br>
-            <!--  -->
-          
-        </th>
-        <td>
-          Samsung AI Expert Program (NPEX), Seoul National University<br>
-Data Visualization
+.
 
-        </td>
-      </tr>
-      <tr>
-        <th scope="row" style="width:160px">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Talks -->
+  <div class="experience-category">
+    <h3 class="category-title">Talks</h3>
+    <div class="experience-list">
+      <div class="experience-item">
+        <span class="experience-date">Nov 2025</span>
+        <div class="experience-content">
+          IEEE VIS 2025, workshop on Visualization for AI Explainability (VISxAI), Vienna, on the research <b>LIME &amp; SHAP Explained: From Computation to Interpretation</b>
+
+<!-- Software Engineering Intern <br/>
+Web UI Developement for Web Browser, <b>Naver Corp.</b> -->
+
+        </div>
+      </div>
+      <div class="experience-item">
+        <span class="experience-date">Oct 2024</span>
+        <div class="experience-content">
+          KoreaVis 2024, Seoul, on the research <b>Towards More Explainable Nonlinear Dimensionality Reduction: A Feature-Driven Interactive Approach</b>
+
+<!-- Software Engineering Intern <br/>
+Web UI Developement for Web Browser, <b>Naver Corp.</b> -->
+
+        </div>
+      </div>
+      <div class="experience-item">
+        <span class="experience-date">Oct 2023</span>
+        <div class="experience-content">
+          IEEE VIS 2023, Melbourne, on the research paper <b>ZADU: A Python Library for Evaluating the Reliability of Dimensionality Reduction Embeddings</b>
+
+<!-- Software Engineering Intern <br/>
+Web UI Developement for Web Browser, <b>Naver Corp.</b> -->
+
+        </div>
+      </div>
+      <div class="experience-item">
+        <span class="experience-date">Jun 2023</span>
+        <div class="experience-content">
+          Tech Talk at Naver Corp, on <b>Interactive Exploration of Nonlinear Dimensionality Reduction</b>
+
+<!-- Software Engineering Intern <br/>
+Web UI Developement for Web Browser, <b>Naver Corp.</b> -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Teaching -->
+  <div class="experience-category">
+    <h3 class="category-title">Teaching</h3>
+    <div class="experience-list">
+      <div class="experience-item teaching-item">
+        <span class="experience-date teaching-date">
           
-            2025 Spring<br>
-            <!--  -->
+            2025 Spring
           
-        </th>
-        <td>
+        </span>
+        <div class="experience-content">
           Woori Financial Group Data Expert, Seoul National University<br>
 Data Visualization
 
-        </td>
-      </tr>
-    </table>
+        </div>
+      </div>
+      <div class="experience-item teaching-item">
+        <span class="experience-date teaching-date">
+          
+            2022 Spring
+          
+        </span>
+        <div class="experience-content">
+          Samsung AI Expert Program (NPEX), Seoul National University<br>
+Data Visualization
+
+        </div>
+      </div>
+      <div class="experience-item teaching-item">
+        <span class="experience-date teaching-date">
+          
+            2022 - 2025
+          
+        </span>
+        <div class="experience-content">
+          Samsung DS<sup>2</sup> Program, Seoul National University<br>
+Data Visualization
+
+        </div>
+      </div>
+      <div class="experience-item teaching-item">
+        <span class="experience-date teaching-date">
+          
+            2021 Fall
+          
+        </span>
+        <div class="experience-content">
+          Digital Computer Concept and Practice, Seoul National University<br>
+Python Programming
+
+        </div>
+      </div>
+    </div>
   </div>
+
+  <!-- Service -->
+  <div class="experience-category">
+    <h3 class="category-title">Service</h3>
+    <div class="experience-list">
+      <div class="experience-item">
+        <span class="experience-date">Apr 2023</span>
+        <div class="experience-content">
+          Student Volunteer, <b>IEEE PacificVis 2023</b>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
 </div>
 
-          <!-- Social -->
-            <div class="social">
-              <div class="contact-icons">
-                <a href="mailto:%61%72%63%68%6F@%68%63%69%6C.%73%6E%75.%61%63.%6B%72" title="email"><i class="fas fa-envelope"></i></a>
-            <a href="https://scholar.google.com/citations?user=wC6g8pgAAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
-            <a href="https://github.com/aeri206" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/aeri-cho" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/aericho_" title="Twitter" rel="external nofollow noopener" target="_blank"><i class="fab fa-twitter"></i></a>
-            
+  </section>
 
-              </div>
+  <!-- News -->
+  
 
-              <div class="contact-note">
-                Feel free to contact me 🤗
-
-              </div>
-
-            </div>
+  <!-- Contact Section -->
+  <section class="contact-section" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(0, 0, 0, 0.1);">
+    <h2 class="section-heading">Contact</h2>
+    <div class="contacts-page" style="text-align: center;">
+      <p style="margin-bottom: 1.5em;">
+        <i class="fas fa-comment-dots"></i> Feel free to contact me for research discussions, collaborations, opportunities, or anything else!
+      </p>
+      
+      <div style="font-size: 1.5em; display: flex; gap: 1.5em; align-items: center; justify-content: center;">
+        <a href="mailto:archo@hcil.snu.ac.kr" title="Email" style="transition: transform 0.2s;"><i class="fas fa-envelope"></i></a>
+        <a href="https://x.com/aericho_" target="_blank" rel="noopener noreferrer" title="X" style="transition: transform 0.2s;"><i class="fab fa-twitter"></i></a>
         
+          <a href="https://github.com/aeri206" target="_blank" rel="noopener noreferrer" title="GitHub" style="transition: transform 0.2s;"><i class="fab fa-github"></i></a>
+        
+        
+          <a href="https://www.linkedin.com/in/aeri-cho" target="_blank" rel="noopener noreferrer" title="LinkedIn" style="transition: transform 0.2s;"><i class="fab fa-linkedin"></i></a>
+        
+        
+          <a href="https://scholar.google.com/citations?user=wC6g8pgAAAAJ" target="_blank" rel="noopener noreferrer" title="Google Scholar" style="transition: transform 0.2s;"><i class="ai ai-google-scholar"></i></a>
+        
+      </div>
+    </div>
+  </section>
 
 </div>
 
       
-    
+    </div>
 
     <!-- Footer -->    
     <footer class="fixed-bottom">

@@ -117,11 +117,10 @@
         <!-- page.html -->
         <div class="post">
 
-          <header class="post-header">
+          <!-- <header class="post-header">
             <h1 class="post-title">publications</h1>
             <p class="post-description"></p>
-          </header>
-
+          </header> -->
           <article>
             <!-- _pages/publications.md -->
 <div class="publications">
@@ -130,36 +129,73 @@
 <ol class="bibliography">
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
-<figure style="margin: 0">
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/towards2025cho.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="towards2025cho.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
+      <!-- Entry bib key -->
+      <div id="cho2025lime" class="publication-content" style="display: flex; gap: 1rem; align-items: flex-start;">
+        <div class="publication-preview" style="flex-shrink: 0; width: 200px; max-width: 200px; height: 200px; max-height: 200px; overflow: hidden; border-radius: 4px; position: relative;">
+          <img src="/assets/img/publication_preview/cho2025lime.png" alt="LIME &amp; SHAP Explained: From Computation to Interpretation" style="width: 100%; height: 100%; object-fit: cover; object-position: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"><div class="abbr-overlay"><abbr class="badge">VISxAI</abbr></div>
 </div>
-
-        <!-- Entry bib key -->
-        <div id="cho2025towards" class="col-sm-8">
+        <div style="flex: 1; min-width: 0;">
+        <div class="abbr">
+<span class="pub-type workshop">Workshop</span>
+        </div>
         <!-- Title -->
-        <div class="title">Towards More Explainable Nonlinear Dimensionality Reduction: A Feature-Driven Interaction Approach</div>
+        <div class="title">
+            LIME &amp; SHAP Explained: From Computation to Interpretation
+        </div>
         <!-- Author -->
         <div class="author">
         
 
-        <em>Aeri Cho</em>, Hyeon Jeon, Kiroong Choe, Seokhyeon Park, and Jinwook Seo</div>
+        <strong>Aeri Cho</strong>, Jeongmin Rhee, Seokhyeon Park, and Jinwook Seo</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>IEEE Transactions on Visualization and Computer Graphics</em>, 2025
+          <em><a href="https://visxai.io/" target="_blank" rel="noopener noreferrer">Workshop on Visualization for AI Explainability (VISxAI) (at IEEE VIS)</a></em>, Nov 2025
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a href="https://aericho.com/explaining-explainable-ml/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Website</a>
+          </div>
+          
+          <div class="badges">
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <!-- Entry bib key -->
+      <div id="cho2025towards" class="publication-content" style="display: flex; gap: 1rem; align-items: flex-start;">
+        <div class="publication-preview" style="flex-shrink: 0; width: 200px; max-width: 200px; height: 200px; max-height: 200px; overflow: hidden; border-radius: 4px; position: relative;">
+          <img src="/assets/img/publication_preview/towards2025cho.png" alt="Towards More Explainable Nonlinear Dimensionality Reduction: A Feature-Driven Interaction Approach" style="width: 100%; height: 100%; object-fit: cover; object-position: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"><div class="abbr-overlay"><abbr class="badge">IEEE TVCG</abbr></div>
+</div>
+        <div style="flex: 1; min-width: 0;">
+        <div class="abbr">
+<span class="pub-type journal">Journal</span>
+        </div>
+        <!-- Title -->
+        <div class="title">
+            Towards More Explainable Nonlinear Dimensionality Reduction: A Feature-Driven Interaction Approach
+        </div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <strong>Aeri Cho</strong>, Hyeon Jeon, Kiroong Choe, Seokhyeon Park, and Jinwook Seo</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em><a href="https://ieeexplore.ieee.org/document/11205332" target="_blank" rel="noopener noreferrer">IEEE Transactions on Visualization and Computer Graphics</a></em>, Nov 2025
         </div>
         <div class="periodical">
           
@@ -182,37 +218,27 @@
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">IEEE PacificVis</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="kim2025automated" class="col-sm-8">
+      <!-- Entry bib key -->
+      <div id="kim2025automated" class="publication-content" style="display: flex; gap: 1rem; align-items: flex-start;">
+        <div style="flex: 1; min-width: 0;">
+        <div class="abbr">
+<abbr class="badge">IEEE PacificVis</abbr><span class="pub-type conference">Conference</span>
+        </div>
         <!-- Title -->
-        <div class="title">Automated Pipeline for Detecting and Analyzing Misleading Visual Elements</div>
+        <div class="title">
+            Automated Pipeline for Detecting and Analyzing Misleading Visual Elements
+        </div>
         <!-- Author -->
         <div class="author">
         
 
-        Min Hyeong Kim, Yumin Song, Yungun Kim, <em>Aeri Cho</em>, Soohyun Lee, Hyeon Jeon, and
-          <span class="more-authors" title="click to view 1 more author" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '1 more author' ? 'Jinwook Seo' : '1 more author';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">1 more author</span>
-</div>
+        Min Hyeong Kim, Yumin Song, Yungun Kim, <strong>Aeri Cho</strong>, Soohyun Lee, Hyeon Jeon, and Jinwook Seo</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>In 2025 IEEE 18th Pacific Visualization Conference (PacificVis)</em>, 2025
+          <em><a href="https://ieeexplore.ieee.org/abstract/document/11021031" target="_blank" rel="noopener noreferrer">2025 IEEE 18th Pacific Visualization Conference (PacificVis)</a></em>, Nov 2025
         </div>
         <div class="periodical">
           
@@ -235,24 +261,27 @@
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">IEEE TPAMI</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="jeon2025measuring" class="col-sm-8">
+      <!-- Entry bib key -->
+      <div id="jeon2025measuring" class="publication-content" style="display: flex; gap: 1rem; align-items: flex-start;">
+        <div style="flex: 1; min-width: 0;">
+        <div class="abbr">
+<abbr class="badge">IEEE TPAMI</abbr><span class="pub-type journal">Journal</span>
+        </div>
         <!-- Title -->
-        <div class="title">Measuring the Validity of Clustering Validation Datasets</div>
+        <div class="title">
+            Measuring the Validity of Clustering Validation Datasets
+        </div>
         <!-- Author -->
         <div class="author">
         
 
-        Hyeon Jeon, Michaël Aupetit, DongHwa Shin, <em>Aeri Cho</em>, Seokhyeon Park, and Jinwook Seo</div>
+        Hyeon Jeon, Michaël Aupetit, DongHwa Shin, <strong>Aeri Cho</strong>, Seokhyeon Park, and Jinwook Seo</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>, Jun 2025
+          <em><a href="https://ieeexplore.ieee.org/abstract/document/10909451" target="_blank" rel="noopener noreferrer">IEEE Transactions on Pattern Analysis and Machine Intelligence</a></em>, Jun 2025
         </div>
         <div class="periodical">
           
@@ -273,37 +302,27 @@
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">IEEE TVCG</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="choe2024enhancing" class="col-sm-8">
+      <!-- Entry bib key -->
+      <div id="choe2024enhancing" class="publication-content" style="display: flex; gap: 1rem; align-items: flex-start;">
+        <div style="flex: 1; min-width: 0;">
+        <div class="abbr">
+<abbr class="badge">IEEE TVCG</abbr><span class="pub-type journal">Journal</span>
+        </div>
         <!-- Title -->
-        <div class="title">Enhancing Data Literacy On-demand: LLMs as Guides for Novices in Chart Interpretation</div>
+        <div class="title">
+            Enhancing Data Literacy On-demand: LLMs as Guides for Novices in Chart Interpretation
+        </div>
         <!-- Author -->
         <div class="author">
         
 
-        Kiroong Choe, Chaerin Lee, Soohyun Lee, Jiwon Song, <em>Aeri Cho</em>, Nam Wook Kim, and
-          <span class="more-authors" title="click to view 1 more author" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '1 more author' ? 'Jinwook Seo' : '1 more author';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">1 more author</span>
-</div>
+        Kiroong Choe, Chaerin Lee, Soohyun Lee, Jiwon Song, <strong>Aeri Cho</strong>, Nam Wook Kim, and Jinwook Seo</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>IEEE Transactions on Visualization and Computer Graphics</em>, Jun 2024
+          <em><a href="https://ieeexplore.ieee.org/document/10555321" target="_blank" rel="noopener noreferrer">IEEE Transactions on Visualization and Computer Graphics</a></em>, Jun 2024
         </div>
         <div class="periodical">
           
@@ -322,37 +341,27 @@
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">IEEE VIS</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="jeon2023zadu" class="col-sm-8">
+      <!-- Entry bib key -->
+      <div id="jeon2023zadu" class="publication-content" style="display: flex; gap: 1rem; align-items: flex-start;">
+        <div style="flex: 1; min-width: 0;">
+        <div class="abbr">
+<abbr class="badge">IEEE VIS</abbr><span class="pub-type conference">Conference</span>
+        </div>
         <!-- Title -->
-        <div class="title">Zadu: A python library for evaluating the reliability of dimensionality reduction embeddings</div>
+        <div class="title">
+            Zadu: A python library for evaluating the reliability of dimensionality reduction embeddings
+        </div>
         <!-- Author -->
         <div class="author">
         
 
-        Hyeon Jeon, <em>Aeri Cho</em>, Jinhwa Jang, Soohyun Lee, Jake Hyun, Hyung-Kwon Ko, and
-          <span class="more-authors" title="click to view 2 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '2 more authors' ? 'Jaemin Jo, Jinwook Seo' : '2 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">2 more authors</span>
-</div>
+        Hyeon Jeon, <strong>Aeri Cho</strong>, Jinhwa Jang, Soohyun Lee, Jake Hyun, Hyung-Kwon Ko, Jaemin Jo, and Jinwook Seo</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>In 2023 IEEE Visualization and Visual Analytics (VIS)</em>, Jun 2023
+          <em><a href="https://ieeexplore.ieee.org/abstract/document/10360886" target="_blank" rel="noopener noreferrer">2023 IEEE Visualization and Visual Analytics (VIS)</a></em>, Jun 2023
         </div>
         <div class="periodical">
           
@@ -373,41 +382,31 @@
 </li>
 </ol>
 
-<h2 class="bibliography">Other Publications</h2>
+<h2 class="bibliography">Others</h2>
 <ol class="bibliography">
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">Health</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="park2024pregnancy" class="col-sm-8">
+      <!-- Entry bib key -->
+      <div id="park2024pregnancy" class="publication-content" style="display: flex; gap: 1rem; align-items: flex-start;">
+        <div style="flex: 1; min-width: 0;">
+        <div class="abbr">
+<abbr class="badge">Health</abbr><span class="pub-type journal">Journal</span>
+        </div>
         <!-- Title -->
-        <div class="title">Pregnancy outcomes of cerclage in twin gestations: a multicenter retrospective cohort study</div>
+        <div class="title">
+            Pregnancy outcomes of cerclage in twin gestations: a multicenter retrospective cohort study
+        </div>
         <!-- Author -->
         <div class="author">
         
 
-        Jee Yoon Park, Kyong-No Lee, Hyeon Ji Kim, Kiroong Choe, <em>Aeri Cho</em>, Bohyoung Kim, and
-          <span class="more-authors" title="click to view 12 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '12 more authors' ? 'Jinwook Seo, Hayan Kwon, Jong Woon Kim, Jin-Gon Bae, Ji-Hee Sung, Se Jin Lee, Young Mi Jung, You Jung Han, Subeen Hong, Jin-Hoon Chung, Hye-Sung Won, Jong Kwan Jun and' : '12 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">12 more authors</span>
-</div>
+        Jee Yoon Park, Kyong-No Lee, Hyeon Ji Kim, Kiroong Choe, <strong>Aeri Cho</strong>, Bohyoung Kim, Jinwook Seo, Hayan Kwon, Jong Woon Kim, Jin-Gon Bae, Ji-Hee Sung, Se Jin Lee, Young Mi Jung, You Jung Han, Subeen Hong, Jin-Hoon Chung, Hye-Sung Won, and Jong Kwan Jun and</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>The Journal of Maternal-Fetal &amp; Neonatal Medicine</em>, 2024
+          <em><a href="https://pubmed.ncbi.nlm.nih.gov/38880661/" target="_blank" rel="noopener noreferrer">The Journal of Maternal-Fetal &amp; Neonatal Medicine</a></em>, 2024
         </div>
         <div class="periodical">
           
@@ -426,37 +425,27 @@
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">Health</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="kim2022association" class="col-sm-8">
+      <!-- Entry bib key -->
+      <div id="kim2022association" class="publication-content" style="display: flex; gap: 1rem; align-items: flex-start;">
+        <div style="flex: 1; min-width: 0;">
+        <div class="abbr">
+<abbr class="badge">Health</abbr><span class="pub-type journal">Journal</span>
+        </div>
         <!-- Title -->
-        <div class="title">Association between cesarean section rate and maternal age in twin pregnancies</div>
+        <div class="title">
+            Association between cesarean section rate and maternal age in twin pregnancies
+        </div>
         <!-- Author -->
         <div class="author">
         
 
-        Seongbeen Kim, Eunjin Song, Ye Hyon Park, <em>Aeri Cho</em>, Kiroong Choe, Hyeon Ji Kim, and
-          <span class="more-authors" title="click to view 3 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '3 more authors' ? 'Jee Yoon Park, Bohyoung Kim, Kyung Joon Oh' : '3 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">3 more authors</span>
-</div>
+        Seongbeen Kim, Eunjin Song, Ye Hyon Park, <strong>Aeri Cho</strong>, Kiroong Choe, Hyeon Ji Kim, Jee Yoon Park, Bohyoung Kim, and Kyung Joon Oh</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>Journal of Perinatal Medicine</em>, 2022
+          <em><a href="https://pubmed.ncbi.nlm.nih.gov/35106987/" target="_blank" rel="noopener noreferrer">Journal of Perinatal Medicine</a></em>, 2022
         </div>
         <div class="periodical">
           
@@ -475,37 +464,27 @@
 </li>
 <li>
 <!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">Health</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="lee2023effects" class="col-sm-8">
+      <!-- Entry bib key -->
+      <div id="lee2023effects" class="publication-content" style="display: flex; gap: 1rem; align-items: flex-start;">
+        <div style="flex: 1; min-width: 0;">
+        <div class="abbr">
+<abbr class="badge">Health</abbr><span class="pub-type journal">Journal</span>
+        </div>
         <!-- Title -->
-        <div class="title">Effects of Fetal Images Produced in Virtual Reality on Maternal-Fetal Attachment: Randomized Controlled Trial</div>
+        <div class="title">
+            Effects of Fetal Images Produced in Virtual Reality on Maternal-Fetal Attachment: Randomized Controlled Trial
+        </div>
         <!-- Author -->
         <div class="author">
         
 
-        Kyong-No Lee, Hyeon Ji Kim, Kiroong Choe, <em>Aeri Cho</em>, Bohyoung Kim, Jinwook Seo, and
-          <span class="more-authors" title="click to view 4 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '4 more authors' ? 'Woojae Myung, Jee Yoon Park, Kyung Joon Oh,  others' : '4 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">4 more authors</span>
-</div>
+        Kyong-No Lee, Hyeon Ji Kim, Kiroong Choe, <strong>Aeri Cho</strong>, Bohyoung Kim, Jinwook Seo, Woojae Myung, Jee Yoon Park, Kyung Joon Oh, and  others</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>Journal of Medical Internet Research</em>, 2023
+          <em><a href="https://www.jmir.org/2023/1/e43634" target="_blank" rel="noopener noreferrer">Journal of Medical Internet Research</a></em>, 2023
         </div>
         <div class="periodical">
           
