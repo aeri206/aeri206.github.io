@@ -2,29 +2,34 @@
 layout: about
 title: about
 permalink: /
-subtitle: 
+subtitle: PhD Student at Seoul National University
 
 profile:
   align: right
   image: aeri_pic.png
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   address: >
-    Email <a href="mailto:archo@hcil.snu.ac.kr"><i class="fas fa-envelope""></i></a><br> 
-# Curriculum Vitae <a href=""><i class="ai ai-cv"></i></a>
+    Email <a href="mailto:archo@hcil.snu.ac.kr"><i class="fas fa-envelope"></i></a>
 
-# news: true  # includes a list of news items
-working: true
-service: true
-teaching: true
-latest_posts: true  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
+# Research interests displayed as tags
+research_interests:
+  - Interactive Data Analysis
+  - HCI
+  - Visual Analytics
+  - Explainable AI
+  - High-Dimensional Data
+  
+# Enable sections
+selected_papers: true
+selected_projects: true
 experiences: true
-social: true  # includes social icons at the bottom of the page
+news: true
+social: true
 ---
 
-Hi. I’m a Ph.D. student at the [Human-Computer Interaction Lab](http://hcil.snu.ac.kr/) at Seoul National University, under the supervision of Professor [Jinwook Seo](http://hcil.snu.ac.kr/people/jinwook-seo). 
+Hi. I'm a Ph.D. student at the [Human-Computer Interaction Lab](http://hcil.snu.ac.kr/) at Seoul National University, advised by Professor [Jinwook Seo](http://hcil.snu.ac.kr/people/jinwook-seo). 
 
 
-My research interests include information visualization, interactive data analysis, and human-computer interaction. I am currently working on developing interactive methods and a visual analytics system to assist users in the analysis of high-dimensional data, with a particular emphasis on enabling interactive non-linear dimensionality reduction.
+My research focuses on making complex fields like high-dimensional data and model explainability more human-friendly and accessible through interactive visualization and intuitive data interactions, enabling people to gain meaningful insights.
 
 I received my B.S. in [Computer Science and Engineering](https://cse.snu.ac.kr/) from [Seoul National University](https://www.snu.ac.kr/) in 2021.

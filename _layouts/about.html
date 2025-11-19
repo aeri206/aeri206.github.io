@@ -2,81 +2,152 @@
 layout: default
 ---
 
-<!-- about.html -->
-      <div class="post">
-        <header class="post-header">
-          <h1 class="post-title">
-           {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
-          </h1>
-          <p class="desc">{{ page.subtitle }}</p>
-        </header>
+<!-- about.html - Redesigned compact layout -->
+<div class="post">
+  <!-- Hero Section: Name + Intro + Photo in one compact row -->
+  <div class="about-hero" style="display: flex; align-items: center; gap: 3rem;">
+    {% if page.profile -%}
+    <div class="about-profile" style="display: flex; flex-direction: column; justify-content: center; align-items: center; flex-shrink: 0; width: 280px;">
+      {%- if page.profile.image %}
+        {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+        {% if page.profile.image_circular %}
+          {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
+        {% else %}
+          {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
+        {% endif %}
 
-        <article>
-          {% if page.profile -%}
-          <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
-            {%- if page.profile.image %}
-              {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
-
-              {% if page.profile.image_circular %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
-              {% else %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
-              {% endif %}
-
-              {% include figure.html
+        <div style="display: inline-block; line-height: 0; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'; this.querySelector('img').style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)';" onmouseout="this.style.transform='scale(1)'; this.querySelector('img').style.boxShadow='0 4px 12px rgba(0, 0, 0, 0.15)';">
+          <div style="line-height: 0;">
+            {% include figure.html
               path=profile_image_path
               class=profile_image_class
-              alt=page.profile.image -%}
-            {% endif -%}
-            {%- if page.profile.address %}
-            <div class="address">
-              {{ page.profile.address }}
-            </div>
-            {%- endif %}
+              alt=profile_image_path -%}
           </div>
+        </div>
+        <style>
+          .about-profile img {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: box-shadow 0.3s ease;
+          }
+        </style>
+      {% endif -%}
+      {%- if page.profile.address %}
+      <div class="address" style="margin-top: 1rem; text-align: center;">
+        {{ page.profile.address }}
+      </div>
+      {%- endif %}
+    </div>
+    {%- endif %}
+    
+    <div class="about-content" style="flex: 1; min-width: 0;">
+      <header class="about-header">
+        <h1 class="about-name">
+          {% if site.title == "blank" -%}
+            <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}
+          {%- else -%}
+            {{ site.title }}
           {%- endif %}
+        </h1>
+        
+      </header>
 
-          <div class="clearfix">
-            {{ content }}
+      <article class="about-intro">
+        {{ content }}
+        
+        <!-- Research Interests Highlights -->
+        {% if page.research_interests -%}
+        <div class="research-interests" style="margin-top: 1.5rem;">
+          <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">Research Interests</h3>
+          <div class="interests-grid">
+            {% for interest in page.research_interests %}
+            <div class="interest-tag">{{ interest }}</div>
+            {% endfor %}
           </div>
+        </div>
+        {%- endif %}
+      </article>
+    </div>
+  </div>
 
-          <!-- News -->
-          {% if page.news and site.announcements.enabled -%}
-            <h2><a id="news" href="{{ '/#news' | relative_url }}" style="color: inherit;">news</a></h2>
-            {%- include news.html limit=true %}
-          {%- endif %}
+  <!-- Selected Publications Section -->
+  {% if page.selected_papers -%}
+  <section class="selected-section publications-section">
+    <h2 class="section-heading">
+      <span>Selected Publications</span>
+      <a class="view-all" href="{{ '/publications/' | relative_url }}">View all publications→</a>
+    </h2>
+    {%- include selected_papers.html %}
+  </section>
+  {%- endif %}
 
-          <!-- Latest posts -->
-          <!-- {% if page.latest_posts -%}
-            <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
-            {%- include latest_posts.html %}
-          {%- endif %} -->
+  <!-- Selected Projects Section -->
+  <!-- {% if page.selected_projects -%}
+  <section class="selected-section">
+    <h2 class="section-heading">
+      <a id="projects" href="{{ '/projects/' | relative_url }}">Selected Projects</a>
+      <span class="view-all">View all →</span>
+    </h2>
+    <div class="selected-projects-grid">
+      {%- assign selected = site.projects | where: "selected", true | sort: "importance" -%}
+      {% for project in selected limit: 3 %}
+      <a href="{{ project.url | relative_url }}" class="project-card-mini">
+        {% if project.img %}
+        <div class="project-img">
+          <img src="{{ project.img | relative_url }}" alt="{{ project.title }}">
+        </div>
+        {% endif %}
+        <div class="project-info">
+          <h4>{{ project.title }}</h4>
+          <p>{{ project.description }}</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {%- endif %} -->
 
-          <!-- Selected papers -->
-          <!-- {% if page.selected_papers -%}
-            <h2><a id="publications" href="{{ '/#publications' | relative_url }}" style="color: inherit;">publications</a></h2>
-            {%- include selected_papers.html %}
-          {%- endif %} -->
+  <!-- Compact Experiences Section -->
+  {% if page.experiences -%}
+  <section class="experiences-compact">
+    <h2 class="section-heading">
+      <a id="experiences" href="{{ '/#experiences' | relative_url }}">Experiences</a>
+    </h2>
+    {%- include experiences_compact.html %}
+  </section>
+  {%- endif %}
 
-          <!-- Educations + Expericnes -->
-          {% if page.experiences -%}
-            <h2><a id="experiences" href="{{ '/#experiences' | relative_url }}" style="color: inherit;">Experiences</a></h2>
-            {%- include experiences.html %}
-          {%- endif %}
+  <!-- News -->
+  {% if page.news and site.announcements.enabled -%}
+  <section class="news-section">
+    <h2 class="section-heading">
+      <a id="news" href="{{ '/#news' | relative_url }}">News</a>
+    </h2>
+    {%- include news.html limit=true %}
+  </section>
+  {%- endif %}
 
-          <!-- Social -->
-          {%- if page.social %}
-            <div class="social">
-              <div class="contact-icons">
-                {% include social.html %}
-              </div>
-
-              <div class="contact-note">
-                {{ site.contact_note }}
-              </div>
-
-            </div>
-          {%- endif %}
-        </article>
+  <!-- Contact Section -->
+  <section class="contact-section" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(0, 0, 0, 0.1);">
+    <h2 class="section-heading">Contact</h2>
+    <div class="contacts-page" style="text-align: center;">
+      <p style="margin-bottom: 1.5em;">
+        <i class="fas fa-comment-dots"></i> Feel free to contact me for research discussions, collaborations, opportunities, or anything else!
+      </p>
+      
+      <div style="font-size: 1.5em; display: flex; gap: 1.5em; align-items: center; justify-content: center;">
+        <a href="mailto:{{ site.email }}" title="Email" style="transition: transform 0.2s;"><i class="fas fa-envelope"></i></a>
+        <a href="https://x.com/aericho_" target="_blank" rel="noopener noreferrer" title="X" style="transition: transform 0.2s;"><i class="fab fa-twitter"></i></a>
+        {% if site.github_username %}
+          <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer" title="GitHub" style="transition: transform 0.2s;"><i class="fab fa-github"></i></a>
+        {% endif %}
+        {% if site.linkedin_username %}
+          <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer" title="LinkedIn" style="transition: transform 0.2s;"><i class="fab fa-linkedin"></i></a>
+        {% endif %}
+        {% if site.scholar_userid %}
+          <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" target="_blank" rel="noopener noreferrer" title="Google Scholar" style="transition: transform 0.2s;"><i class="ai ai-google-scholar"></i></a>
+        {% endif %}
+      </div>
+    </div>
+  </section>
 
 </div>

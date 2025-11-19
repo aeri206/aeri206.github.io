@@ -4,35 +4,51 @@
  ******************************************************************************/
 
 
-// Colors
-$red-color:           #FF3636 !default;
-$red-color-dark:      #B71C1C !default;
-$orange-color:        #F29105 !default;
-$blue-color:          #0076df !default;
-$blue-color-dark:     #00369f !default;
-$cyan-color:          #2698BA !default;
+// Custom color palette for researcher website
+// Sophisticated, academic-focused colors
+
+// Primary accent colors
+$primary-accent:       #3B7FBF !default;  // Vibrant professional blue (more visible)
+$primary-accent-dark:  #1A3D5C !default;  // Darker blue for depth
+$primary-accent-light: #5B9DD9 !default;  // Lighter blue for hover states
+
+$secondary-accent:     #8B4F8B !default;  // Muted purple for contrast
+$tertiary-accent:      #C67D5C !default;  // Warm terracotta for highlights
+
+// Semantic colors
+$red-color:           #D64545 !default;
+$red-color-dark:      #A73636 !default;
+$orange-color:        #E08E45 !default;
+$blue-color:          #2C5F8D !default;
+$blue-color-dark:     #1A3D5C !default;
+$cyan-color:          #4A9BB8 !default;
 $light-cyan-color:    lighten($cyan-color, 25%);
-$green-color:         #00ab37 !default;
-$green-color-lime:    #B7D12A !default;
-$green-color-dark:    #009f06 !default;
-$green-color-light:   #ddffdd !default;
-$green-color-bright:  #11D68B !default;
-$purple-color:        #B509AC !default;
+$green-color:         #5B9A6D !default;
+$green-color-lime:    #A8BD65 !default;
+$green-color-dark:    #4A8159 !default;
+$green-color-light:   #E8F5E9 !default;
+$green-color-bright:  #6BBF8D !default;
+$purple-color:        #8B4F8B !default;
 $light-purple-color:  lighten($purple-color, 25%);
-$pink-color:          #f92080 !default;
-$pink-color-light:    #ffdddd !default;
-$yellow-color:        #efcc00 !default;
+$pink-color:          #D96B8C !default;
+$pink-color-light:    #FFE8EE !default;
+$yellow-color:        #E5B84A !default;
 
-$grey-color:          #828282 !default;
-$grey-color-light:    lighten($grey-color, 40%);
-$grey-color-dark:     #1C1C1D;
-$grey-900:            #212529;
+// Neutral colors with better depth
+$grey-color:          #6B7280 !default;
+$grey-color-light:    #D1D5DB !default;
+$grey-color-medium:   #9CA3AF !default;
+$grey-color-dark:     #1F2937 !default;
+$grey-900:            #111827 !default;
+$grey-50:             #F9FAFB !default;
 
-$white-color: #ffffff !default;
-$black-color: #000000 !default;
+$white-color: #FFFFFF !default;
+$black-color: #1A1A1A !default;  // Softer than pure black
 
+// Background colors
+$bg-light:            #FAFBFC !default;  // Slightly off-white for warmth
+$bg-dark:             #1A202C !default;  // Rich dark background
 
-// Theme colors
-
-$code-bg-color-light:     rgba($purple-color, 0.05);
-$code-bg-color-dark:      #2c3237 !default;
+// Theme colors for code blocks
+$code-bg-color-light:     #F5F7FA !default;
+$code-bg-color-dark:      #2D3748 !default;

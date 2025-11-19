@@ -10,9 +10,9 @@ nav_order: 1
 <div class="publications">
 
 <h2 class="bibliography">Visualization</h2>
-{% bibliography -f {{ site.scholar.bibliography }} -q @*[abbr=IEEE TVCG] || @*[abbr=IEEE PacificVis] || @*[abbr=IEEE TPAMI] || @*[abbr=IEEE VIS] %}
+{% bibliography -f {{ site.scholar.bibliography }} -q @*[abbr=IEEE TVCG] || @*[abbr=IEEE PacificVis] || @*[abbr=IEEE TPAMI] || @*[abbr=IEEE VIS] || @*[abbr=VISxAI]%}
 
-<h2 class="bibliography">Other Publications</h2>
+<h2 class="bibliography">Others</h2>
 {% bibliography -f {{ site.scholar.bibliography }} -q @*[abbr=JMIR] || @*[abbr=Health] %}
 
 </div>
