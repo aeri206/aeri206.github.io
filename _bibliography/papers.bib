@@ -3,29 +3,46 @@
 
 @string{aps = {American Physical Society,}}
 
+@article{cho2025lime,
+  title={LIME \& SHAP Explained: From Computation to Interpretation},
+  author={Cho, Aeri and Rhee, Jeongmin and Park, Seokhyeon and Seo, Jinwook},
+  journal={Workshop on Visualization for AI Explainability (VISxAI) (at IEEE VIS)},
+  year={2025},
+  home_url={https://visxai.io/},
+  abbr={VISxAI},
+  month={Nov},
+  website={https://aericho.com/explaining-explainable-ml/},
+  preview={cho2025lime.png},
+  selected={true},
+}
+
 @article{cho2025towards,
   title={Towards More Explainable Nonlinear Dimensionality Reduction: A Feature-Driven Interaction Approach},
   author={Cho, Aeri and Jeon, Hyeon and Choe, Kiroong and Park, Seokhyeon and Seo, Jinwook},
   journal={IEEE Transactions on Visualization and Computer Graphics},
   year={2025},
   publisher={IEEE},
-  abbr={IEEE TVCG}
+  abbr={IEEE TVCG},
+  selected={true},
+  abstract={Nonlinear dimensionality reduction (NDR) techniques are widely used to visualize high-dimensional data. However, they often lack explainability, making it challenging for analysts to relate patterns in projections to original high-dimensional features. Existing interactive methods typically separate user interactions from the feature space, treating them primarily as post-hoc explanations rather than integrating them into the exploration process. This separation limits insight generation by restricting users' understanding of how features dynamically influence projections. To address this limitation, we propose a bidirectional interaction method that directly bridges the feature space and the projections. By allowing users to adjust feature weights, our approach enables intuitive exploration of how different features shape the embedding. We also define visual semantics to quantify projection changes, enabling structured pattern discovery through automated query-based interaction. To ensure responsiveness despite the computational complexity of NDR, we employ a neural network to approximate the projection process, enhancing scalability while maintaining accuracy. We evaluated our approach through quantitative analysis, assessing accuracy and scalability. A user study with a comprehensive visual interface and case studies demonstrated its effectiveness in supporting hypothesis generation and exploratory tasks with real-world data. The results confirmed that our approach supports diverse analytical scenarios and enhances users' ability to explore and interpret high-dimensional data through interactive exploration grounded in the feature space.},
+  home_url={https://ieeexplore.ieee.org/document/11205332},
+  preview={towards2025cho.png}
 }
 
-@INPROCEEDINGS{kim2025automated,
+@inproceedings{kim2025automated,
+  title={Automated Pipeline for Detecting and Analyzing Misleading Visual Elements},
   author={Kim, Min Hyeong and Song, Yumin and Kim, Yungun and Cho, Aeri and Lee, Soohyun and Jeon, Hyeon and Seo, Jinwook},
-  booktitle={2025 IEEE 18th Pacific Visualization Conference (PacificVis)}, 
-  title={Automated Pipeline for Detecting and Analyzing Misleading Visual Elements}, 
+  journal={2025 IEEE 18th Pacific Visualization Conference (PacificVis)},
+  home_url={https://ieeexplore.ieee.org/abstract/document/11021031},
+  booktitle={2025 IEEE 18th Pacific Visualization Conference (PacificVis)},
+  pages={346--351},
   year={2025},
-  volume={},
-  number={},
-  pages={346-351},
   abstract={Data visualizations can sometimes misrepresent the underlying data, leading to misleading interpretations. However, existing systems fail to precisely identify which parts of a visualization contribute to misleading interpretations, leaving users uncertain about the misalignments. To address this issue, we develop a pipeline that automatically identifies the misleading parts within a visualization. Given an image file, our pipeline first detects graphical components of the visualization, converting them into structured objects. We then apply an algorithm to pinpoint misleading objects and explain how they contribute to distortions in interpretation. Our user study confirms that our pipeline accurately identifies misleading visualization designs, outperforming previous baselines. We also find that our pipeline supports participants in developing revision strategies to improve misleading visualizations.},
-  keywords={Visualization;Annotations;Pipelines;Data visualization;Distortion;Misleading Visualizations;Visual Annotation},
-  doi={10.1109/PacificVis64226.2025.00041},
-  ISSN={2165-8773},
-  month={April},
-  abbr={IEEE PacificVis}}
+  organization={IEEE},
+  abbr={IEEE PacificVis},
+  selected={true}
+}
+
 
 
 @article{jeon2025measuring,
@@ -33,13 +50,16 @@
   journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
   title={Measuring the Validity of Clustering Validation Datasets}, 
   year={2025},
+  home_url={https://ieeexplore.ieee.org/abstract/document/10909451},
   volume={47},
   number={6},
   pages={5045-5058},
   keywords={Reliability;Benchmark testing;Protocols;Training;Standards;Size measurement;Mutual information;Indexes;Electronic mail;Data mining;Clustering;clustering validation;internal clustering validation;external clustering validation;clustering benchmark},
   doi={10.1109/TPAMI.2025.3548011},
   ISSN={1939-3539},
+  code={https://github.com/hj-n/labeled-datasets},
   month={June},
+  website={https://hyeonword.com/clm-home/},
   abbr={IEEE TPAMI}}
 
 
@@ -52,17 +72,21 @@
   keywords={Data visualization;Visualization;Task analysis;Education;Artificial intelligence;Annotations;Visual communication;Visualization literacy;large language model;visual communication},
   doi={10.1109/TVCG.2024.3413195},
   ISSN={1941-0506},
-  month={},
+  home_url={https://ieeexplore.ieee.org/document/10555321},
   abbr={IEEE TVCG}
 }
 
-@article{jeon2022sanity,
-  title={ZADU: A Python Library for Evaluating the Reliability of Dimensionality Reduction Embeddings },
-  author={Jeon, Hyeon and Cho, Aeri and Jang, Jinhwa and Lee, soohyun and Hyun, Jake and Ko, Hyung-Kwon and Jo, Jaemin and Seo, Jinwook},
+@inproceedings{jeon2023zadu,
+  title={Zadu: A python library for evaluating the reliability of dimensionality reduction embeddings},
+  author={Jeon, Hyeon and Cho, Aeri and Jang, Jinhwa and Lee, Soohyun and Hyun, Jake and Ko, Hyung-Kwon and Jo, Jaemin and Seo, Jinwook},
+  booktitle={2023 IEEE Visualization and Visual Analytics (VIS)},
   journal={2023 IEEE Visualization and Visual Analytics (VIS)},
+  
+  pages={196--200},
   year={2023},
   organization={IEEE},
   abbr={IEEE VIS},
+  home_url={https://ieeexplore.ieee.org/abstract/document/10360886},
   code={https://github.com/hj-n/zadu},
   pdf={http://hcil.snu.ac.kr/system/publications/pdfs/000/000/182/original/ZADU_Library__for_VIS_2023_Short__%2818%29.pdf?1691729330}
 }
@@ -77,10 +101,10 @@ pages = {2355495},
 year = {2024},
 publisher = {Taylor \& Francis},
 doi = {10.1080/14767058.2024.2355495},
-note ={PMID: 38880661},
 URL = {https://doi.org/10.1080/14767058.2024.2355495},
 eprint = {https://doi.org/10.1080/14767058.2024.2355495},
-abbr={Health}
+abbr={Health},
+home_url={https://pubmed.ncbi.nlm.nih.gov/38880661/}
 }
 
 @article{kim2022association,
@@ -92,7 +116,7 @@ abbr={Health}
   pages={438--445},
   year={2022},
   publisher={De Gruyter},
-  html={https://pubmed.ncbi.nlm.nih.gov/35106987/},
+  home_url={https://pubmed.ncbi.nlm.nih.gov/35106987/},
   abbr={Health}
 }
 
@@ -106,7 +130,7 @@ abbr={Health}
   year={2023},
   abbr={JMIR},
   publisher={JMIR Publications Inc., Toronto, Canada},
-  html={https://www.jmir.org/2023/1/e43634},
+  home_url={https://www.jmir.org/2023/1/e43634},
   abbr={Health}
 }
 

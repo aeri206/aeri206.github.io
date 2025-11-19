@@ -1,0 +1,95 @@
+<div class="experiences-grid">
+  <!-- Working Experience -->
+  {% if site.working != blank -%}
+  <div class="experience-category">
+    <h3 class="category-title">Work</h3>
+    <div class="experience-list">
+      {%- assign experiences = site.working | sort: "date" | reverse | limit: 3 -%}
+      {% for item in experiences %}
+      <div class="experience-item">
+        <span class="experience-date">{{ item.start }}{% if item.end %} - {{ item.end }}{% endif %}</span>
+        <div class="experience-content">
+          {% if item.inline -%}
+            {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+          {%- else -%}
+            <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+          {%- endif %}
+        </div>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+  {%- endif %}
+
+  <!-- Talks -->
+  {% if site.talk != blank -%}
+  <div class="experience-category">
+    <h3 class="category-title">Talks</h3>
+    <div class="experience-list">
+      {%- assign talks = site.talk | sort: "date" | reverse | limit: 3 -%}
+      {% for item in talks %}
+      <div class="experience-item">
+        <span class="experience-date">{{ item.start }}{% if item.end %} - {{ item.end }}{% endif %}</span>
+        <div class="experience-content">
+          {% if item.inline -%}
+            {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+          {%- else -%}
+            <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+          {%- endif %}
+        </div>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+  {%- endif %}
+
+  <!-- Teaching -->
+  {% if site.teaching != blank -%}
+  <div class="experience-category">
+    <h3 class="category-title">Teaching</h3>
+    <div class="experience-list">
+      {%- assign teaching = site.teaching | sort: "date" | reverse | limit: 3 -%}
+      {% for item in teaching %}
+      <div class="experience-item teaching-item">
+        <span class="experience-date teaching-date">
+          {% for semester in item.semesters %}
+            {{ semester }}{% unless forloop.last %}<br>{% endunless %}
+          {% endfor %}
+        </span>
+        <div class="experience-content">
+          {% if item.inline -%}
+            {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+          {%- else -%}
+            <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+          {%- endif %}
+        </div>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+  {%- endif %}
+
+  <!-- Service -->
+  {% if site.service != blank -%}
+  <div class="experience-category">
+    <h3 class="category-title">Service</h3>
+    <div class="experience-list">
+      {%- assign services = site.service | sort: "date" | reverse | limit: 3 -%}
+      {% for item in services %}
+      <div class="experience-item">
+        <span class="experience-date">{{ item.start }}{% if item.end %} - {{ item.end }}{% endif %}</span>
+        <div class="experience-content">
+          {% if item.inline -%}
+            {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+          {%- else -%}
+            <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+          {%- endif %}
+        </div>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+  {%- endif %}
+
+  
+</div>
