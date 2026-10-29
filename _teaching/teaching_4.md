@@ -7,4 +7,4 @@ related_posts: false
 ---
 
 Woori Financial Group Data Expert, Seoul National University<br/>
-Data Visualization
+TA, Data Visualization

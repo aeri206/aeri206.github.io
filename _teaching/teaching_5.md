@@ -6,4 +6,5 @@ inline: true
 related_posts: false
 ---
 
-Undergraduate Human-Computer Interaction, Seoul National University
+Human-Computer Interaction (Undergraduate Course), Seoul National University<br/>
+TA, Lab Sessions & Project Mentoring

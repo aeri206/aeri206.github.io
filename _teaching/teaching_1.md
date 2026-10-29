@@ -7,4 +7,4 @@ related_posts: false
 ---
 
 Digital Computer Concept and Practice, Seoul National University<br/>
-Python Programming
+TA, Python Programming

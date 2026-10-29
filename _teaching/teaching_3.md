@@ -7,4 +7,4 @@ related_posts: false
 ---
 
 Samsung AI Expert Program (NPEX), Seoul National University<br/>
-Data Visualization
+TA, Data Visualization
