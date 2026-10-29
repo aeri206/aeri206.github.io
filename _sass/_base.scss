@@ -1441,30 +1441,30 @@ nav[data-toggle="toc"] {
 
   /* Mobile publication preview - smallest screens */
   .publication-preview {
-    width: 150px !important;
-    max-width: 150px !important;
-    height: 150px !important;
-    max-height: 150px !important;
+    width: 160px !important;
+    max-width: 160px !important;
+    height: 120px !important;
+    max-height: 120px !important;
   }
 }
 
 /* Medium screens - tablet */
 @media (min-width: 577px) and (max-width: 768px) {
   .publication-preview {
-    width: 180px !important;
-    max-width: 180px !important;
-    height: 180px !important;
-    max-height: 180px !important;
+    width: 200px !important;
+    max-width: 200px !important;
+    height: 150px !important;
+    max-height: 150px !important;
   }
 }
 
 /* Larger tablets and small desktops */
 @media (min-width: 769px) and (max-width: 992px) {
   .publication-preview {
-    width: 180px !important;
-    max-width: 180px !important;
-    height: 180px !important;
-    max-height: 180px !important;
+    width: 200px !important;
+    max-width: 200px !important;
+    height: 150px !important;
+    max-height: 150px !important;
   }
 }
 

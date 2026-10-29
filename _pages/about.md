@@ -6,7 +6,7 @@ subtitle: PhD Student at Seoul National University
 
 profile:
   align: right
-  image: aeri_pic.png
+  image: aeri_pic.jpg
   image_circular: false
   address: >
     Email <a href="mailto:archo@hcil.snu.ac.kr"><i class="fas fa-envelope"></i></a>
@@ -21,6 +21,7 @@ research_interests:
   
 # Enable sections
 selected_papers: true
+selected_papers_order: [cho2025towards, cho2025lime, song2026good]
 selected_projects: true
 experiences: true
 news: true

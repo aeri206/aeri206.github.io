@@ -7,7 +7,7 @@ layout: default
   <!-- Hero Section: Name + Intro + Photo in one compact row -->
   <div class="about-hero" style="display: flex; align-items: center; gap: 3rem;">
     {% if page.profile -%}
-    <div class="about-profile" style="display: flex; flex-direction: column; justify-content: center; align-items: center; flex-shrink: 0; width: 280px;">
+    <div class="about-profile" style="display: flex; flex-direction: column; justify-content: center; align-items: center; flex-shrink: 0; width: 220px;">
       {%- if page.profile.image %}
         {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
         {% if page.profile.image_circular %}
@@ -26,6 +26,8 @@ layout: default
         </div>
         <style>
           .about-profile img {
+            width: 220px;
+            height: auto;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             transition: box-shadow 0.3s ease;
           }

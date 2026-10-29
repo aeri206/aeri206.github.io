@@ -1,4 +1,10 @@
 
           <div class="publications">
-            {% bibliography -f {{ site.scholar.bibliography }} -q @*[selected=true]* %}
+            {%- if page.selected_papers_order -%}
+              {%- for key in page.selected_papers_order -%}
+                {% bibliography -f {{ site.scholar.bibliography }} -q @*[key={{ key }}] %}
+              {%- endfor -%}
+            {%- else -%}
+              {% bibliography -f {{ site.scholar.bibliography }} -q @*[selected=true]* %}
+            {%- endif -%}
           </div>

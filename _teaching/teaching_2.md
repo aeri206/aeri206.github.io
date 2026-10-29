@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2022-03-01 00:00:00 +0900
-semesters: [2022 - 2025]
+date: 2026-06-01 00:00:00 +0900
+semesters: [2022 - 2026]
 inline: true
 related_posts: false
 ---
