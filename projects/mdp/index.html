@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Multidimensional Projection | Aeri  Cho</title>
+    <meta name="author" content="Aeri  Cho">
+    <meta name="description" content="Making projections of high-dimensional data explainable, reliable, and explorable.">
+    <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+    <!-- Bootstrap Table -->
+    <link defer rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.css">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
+
+    
+
+    <!-- Styles -->
+    
+    <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%8F%9D%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://aeri206.github.io/projects/mdp/">
+
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Aeri </span>Cho</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+              <!-- About -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/">about</a>
+              </li>
+              
+              <!-- Blog -->
+              <!-- <li class="nav-item ">
+                <a class="nav-link" href="/blog/">blog</a>
+              </li> -->
+
+              <!-- Other pages -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/publications">publications</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <li class="toggle-container">
+                <button id="light-toggle" title="Change theme">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Scrolling Progress Bar -->
+      <progress id="progress" value="0">
+        <div class="progress-container">
+          <span class="progress-bar"></span>
+        </div>
+      </progress>
+    </header>
+
+
+    <!-- Content -->
+    <div class="container mt-5">
+      
+        <!-- page.html -->
+        <div class="post">
+
+          <!-- <header class="post-header">
+            <h1 class="post-title">Multidimensional Projection</h1>
+            <p class="post-description">Making projections of high-dimensional data explainable, reliable, and explorable.</p>
+          </header> -->
+          <article>
+            <p>Multidimensional projection (MDP), also called dimensionality reduction, maps high-dimensional data onto a 2D scatterplot. Projections are widely used, but the patterns they show are hard to trust and hard to relate back to the original features.
+My work asks how analysts can <strong>explore</strong> projections interactively, <strong>evaluate</strong> how faithful they are, and <strong>explain</strong> which features shape them.</p>
+
+<h2 id="research">Research</h2>
+
+<div class="publications">
+<ol class="bibliography"><li>
+<!-- _layouts/bib.html -->
+      <!-- Entry bib key -->
+      <div id="cho2025towards" class="publication-content" style="display: flex; gap: 1rem; align-items: flex-start;">
+        <div class="publication-preview" style="flex-shrink: 0; width: 240px; max-width: 240px; height: 180px; max-height: 180px; overflow: hidden; border-radius: 4px; position: relative;">
+          <img src="/assets/img/publication_preview/towards2025cho.png" alt="Towards More Explainable Nonlinear Dimensionality Reduction: A Feature-Driven Interaction Approach" style="width: 100%; height: 100%; object-fit: cover; object-position: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"><div class="abbr-overlay"><abbr class="badge">IEEE TVCG</abbr></div>
+</div>
+        <div style="flex: 1; min-width: 0;">
+        <div class="abbr">
+<span class="pub-type journal">Journal</span>
+        </div>
+        <!-- Title -->
+        <div class="title">
+            Towards More Explainable Nonlinear Dimensionality Reduction: A Feature-Driven Interaction Approach
+        </div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <strong>Aeri Cho</strong>, Hyeon Jeon, Kiroong Choe, Seokhyeon Park, and Jinwook Seo</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em><a href="https://ieeexplore.ieee.org/document/11205332" target="_blank" rel="noopener noreferrer">IEEE Transactions on Visualization and Computer Graphics</a></em>, Oct 2025
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+          </div>
+          
+          <div class="badges">
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Nonlinear dimensionality reduction (NDR) techniques are widely used to visualize high-dimensional data. However, they often lack explainability, making it challenging for analysts to relate patterns in projections to original high-dimensional features. Existing interactive methods typically separate user interactions from the feature space, treating them primarily as post-hoc explanations rather than integrating them into the exploration process. This separation limits insight generation by restricting users’ understanding of how features dynamically influence projections. To address this limitation, we propose a bidirectional interaction method that directly bridges the feature space and the projections. By allowing users to adjust feature weights, our approach enables intuitive exploration of how different features shape the embedding. We also define visual semantics to quantify projection changes, enabling structured pattern discovery through automated query-based interaction. To ensure responsiveness despite the computational complexity of NDR, we employ a neural network to approximate the projection process, enhancing scalability while maintaining accuracy. We evaluated our approach through quantitative analysis, assessing accuracy and scalability. A user study with a comprehensive visual interface and case studies demonstrated its effectiveness in supporting hypothesis generation and exploratory tasks with real-world data. The results confirmed that our approach supports diverse analytical scenarios and enhances users’ ability to explore and interpret high-dimensional data through interactive exploration grounded in the feature space.</p>
+          </div>
+        </div>
+      </div>
+</li></ol>
+<ol class="bibliography"><li>
+<!-- _layouts/bib.html -->
+      <!-- Entry bib key -->
+      <div id="jeon2023zadu" class="publication-content" style="display: flex; gap: 1rem; align-items: flex-start;">
+        <div style="flex: 1; min-width: 0;">
+        <div class="abbr">
+<abbr class="badge">IEEE VIS</abbr><span class="pub-type conference">Conference</span>
+        </div>
+        <!-- Title -->
+        <div class="title">
+            Zadu: A python library for evaluating the reliability of dimensionality reduction embeddings
+        </div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Hyeon Jeon, <strong>Aeri Cho</strong>, Jinhwa Jang, Soohyun Lee, Jake Hyun, Hyung-Kwon Ko, Jaemin Jo, and Jinwook Seo</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em><a href="https://ieeexplore.ieee.org/abstract/document/10360886" target="_blank" rel="noopener noreferrer">2023 IEEE Visualization and Visual Analytics (VIS)</a></em>, Oct 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a href="http://hcil.snu.ac.kr/system/publications/pdfs/000/000/182/original/ZADU_Library__for_VIS_2023_Short__%2818%29.pdf?1691729330" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+            <a href="https://github.com/hj-n/zadu" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+          </div>
+          
+          <div class="badges">
+          </div>
+
+          
+        </div>
+      </div>
+</li></ol>
+<ol class="bibliography"><li>
+<!-- _layouts/bib.html -->
+      <!-- Entry bib key -->
+      <div id="jeon2025measuring" class="publication-content" style="display: flex; gap: 1rem; align-items: flex-start;">
+        <div style="flex: 1; min-width: 0;">
+        <div class="abbr">
+<abbr class="badge">IEEE TPAMI</abbr><span class="pub-type journal">Journal</span>
+        </div>
+        <!-- Title -->
+        <div class="title">
+            Measuring the Validity of Clustering Validation Datasets
+        </div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Hyeon Jeon, Michaël Aupetit, DongHwa Shin, <strong>Aeri Cho</strong>, Seokhyeon Park, and Jinwook Seo</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em><a href="https://ieeexplore.ieee.org/abstract/document/10909451" target="_blank" rel="noopener noreferrer">IEEE Transactions on Pattern Analysis and Machine Intelligence</a></em>, Jun 2025
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a href="https://github.com/hj-n/labeled-datasets" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+            <a href="https://hyeonword.com/clm-home/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Website</a>
+          </div>
+          
+          <div class="badges">
+          </div>
+
+          
+        </div>
+      </div>
+</li></ol>
+</div>
+
+<h2 id="interactive-demos">Interactive Demos</h2>
+
+<ul>
+  <li>
+<strong><a href="https://aericho.com/mdp-tour/" rel="external nofollow noopener" target="_blank">Projection Explorer</a></strong> — Tours through projections of benchmark datasets, animating between embeddings and highlighting clusters.</li>
+  <li>
+<strong><a href="https://aericho.com/metric_viewer/" rel="external nofollow noopener" target="_blank">Metric Viewer for MDP</a></strong> — Linked histograms of projection quality metrics (Trustworthiness, Continuity, Steadiness, Cohesiveness, DTM, …). Brush a metric range to filter projections by method.</li>
+  <li>
+<strong><a href="https://aericho.com/mdp-matrix/" rel="external nofollow noopener" target="_blank">Projection Matrix</a></strong> — Matrix visualization comparing many projections of the same data, with seriation (<a href="https://github.com/jdfekete/reorder.js/" rel="external nofollow noopener" target="_blank">reorder.js</a>), sorting by hyperparameters, and an adjustable similarity threshold.</li>
+  <li>
+<strong><a href="https://aericho.com/mdp_pilot/" rel="external nofollow noopener" target="_blank">Projection Comparison Study</a></strong> — Pilot study interface for comparing and ranking multiple projections side by side.</li>
+</ul>
+
+<h2 id="code--datasets">Code &amp; Datasets</h2>
+
+<ul>
+  <li>
+<strong><a href="https://github.com/hj-n/zadu" rel="external nofollow noopener" target="_blank">ZADU</a></strong> — Python library of distortion measures for evaluating the reliability of dimensionality reduction embeddings.</li>
+  <li>
+<strong><a href="https://github.com/hj-n/labeled-datasets" rel="external nofollow noopener" target="_blank">Labeled Datasets</a></strong> — 96 benchmark datasets for external clustering validation, with class-label matching scores (<a href="https://hyeonword.com/clm-home/" rel="external nofollow noopener" target="_blank">project page</a>).</li>
+</ul>
+
+          </article>
+
+        </div>
+
+      
+    </div>
+
+    <!-- Footer -->    
+    <footer class="fixed-bottom">
+      <div class="container mt-0" style="text-align: center;">
+        © Copyright 2026 Aeri  Cho. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. .
+
+      </div>
+    </footer>
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+    
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js"></script>
+
+  <!-- Bootstrap Table -->
+  <script defer src="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.js"></script>
+
+  <!-- Load Common JS -->
+  <script src="/assets/js/no_defer.js"></script>
+  <script defer src="/assets/js/common.js"></script>
+  <script defer src="/assets/js/copy_code.js" type="text/javascript"></script>
+
+    
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    
+    
+
+<!-- Scrolling Progress Bar -->
+<script type="text/javascript">
+  /*
+   * This JavaScript code has been adapted from the article 
+   * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar, 
+   * published on the website https://css-tricks.com on the 7th of May, 2014.
+   * Couple of changes were made to the original code to make it compatible 
+   * with the `al-foio` theme.
+   */
+  const progressBar = $("#progress");
+  /*
+   * We set up the bar after all elements are done loading.
+   * In some cases, if the images in the page are larger than the intended
+   * size they'll have on the page, they'll be resized via CSS to accomodate
+   * the desired size. This mistake, however, breaks the computations as the
+   * scroll size is computed as soon as the elements finish loading.
+   * To account for this, a minimal delay was introduced before computing the
+   * values.
+   */
+  window.onload = function () {
+    setTimeout(progressBarSetup, 50);
+  };
+  /*
+   * We set up the bar according to the browser.
+   * If the browser supports the progress element we use that.
+   * Otherwise, we resize the bar thru CSS styling
+   */
+  function progressBarSetup() {
+    if ("max" in document.createElement("progress")) {
+      initializeProgressElement();
+      $(document).on("scroll", function() {
+        progressBar.attr({ value: getCurrentScrollPosition() });
+      });
+      $(window).on("resize", initializeProgressElement);
+    } else {
+      resizeProgressBar();
+      $(document).on("scroll", resizeProgressBar);
+      $(window).on("resize", resizeProgressBar);
+    }
+  }
+  /*
+   * The vertical scroll position is the same as the number of pixels that
+   * are hidden from view above the scrollable area. Thus, a value > 0 is
+   * how much the user has scrolled from the top
+   */
+  function getCurrentScrollPosition() {
+    return $(window).scrollTop();
+  }
+
+  function initializeProgressElement() {
+    let navbarHeight = $("#navbar").outerHeight(true);
+    $("body").css({ "padding-top": navbarHeight });
+    $("progress-container").css({ "padding-top": navbarHeight });
+    progressBar.css({ top: navbarHeight });
+    progressBar.attr({
+      max: getDistanceToScroll(),
+      value: getCurrentScrollPosition(),
+    });
+  }
+  /*
+   * The offset between the html document height and the browser viewport
+   * height will be greater than zero if vertical scroll is possible.
+   * This is the distance the user can scroll
+   */
+  function getDistanceToScroll() {
+    return $(document).height() - $(window).height();
+  }
+
+  function resizeProgressBar() {
+    progressBar.css({ width: getWidthPercentage() + "%" });
+  }
+  // The scroll ratio equals the percentage to resize the bar
+  function getWidthPercentage() {
+    return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
+  }
+</script>
+
+  </body>
+</html>

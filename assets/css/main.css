@@ -63,7 +63,7 @@ html[data-theme=dark] {
   --global-distill-app-color: #D1D5DB;
   --global-divider-color: #1F2937;
   --global-card-bg-color: #111827;
-  --global-accent-color: rgb(195.3876146789, 150.1123853211, 195.3876146789);
+  --global-accent-color: rgb(76.6225939917%, 58.8676020867%, 76.6225939917%);
   --global-highlight-color: #E08E45;
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
@@ -145,7 +145,7 @@ body.sticky-bottom-footer {
 
 .about-hero {
   display: grid;
-  grid-template-columns: 1fr 280px;
+  grid-template-columns: 1fr 220px;
   gap: 3rem;
   margin-bottom: 3rem;
   border-bottom: 1px solid var(--global-divider-color);
@@ -429,7 +429,7 @@ html[data-theme=dark] .experiences-compact .experience-list .experience-item .ex
     margin: 0 auto;
   }
   .about-hero .about-profile img {
-    width: 100%;
+    width: 180px;
     height: auto;
   }
   .about-hero .about-content {
@@ -1779,28 +1779,28 @@ nav[data-toggle=toc] .nav-link.active:hover {
   }
   /* Mobile publication preview - smallest screens */
   .publication-preview {
-    width: 150px !important;
-    max-width: 150px !important;
-    height: 150px !important;
-    max-height: 150px !important;
+    width: 160px !important;
+    max-width: 160px !important;
+    height: 120px !important;
+    max-height: 120px !important;
   }
 }
 /* Medium screens - tablet */
 @media (min-width: 577px) and (max-width: 768px) {
   .publication-preview {
-    width: 180px !important;
-    max-width: 180px !important;
-    height: 180px !important;
-    max-height: 180px !important;
+    width: 200px !important;
+    max-width: 200px !important;
+    height: 150px !important;
+    max-height: 150px !important;
   }
 }
 /* Larger tablets and small desktops */
 @media (min-width: 769px) and (max-width: 992px) {
   .publication-preview {
-    width: 180px !important;
-    max-width: 180px !important;
-    height: 180px !important;
-    max-height: 180px !important;
+    width: 200px !important;
+    max-width: 200px !important;
+    height: 150px !important;
+    max-height: 150px !important;
   }
 }
 /* Tips, warnings, and dangers blockquotes */
