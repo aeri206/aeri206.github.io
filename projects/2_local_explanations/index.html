@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Multidimensional Projection | Aeri  Cho</title>
+    <title>Explainable AI | Aeri  Cho</title>
     <meta name="author" content="Aeri  Cho">
-    <meta name="description" content="Making projections of high-dimensional data explainable, reliable, and explorable.">
+    <meta name="description" content="Interactive visual explanations that make model behavior understandable.">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -41,7 +41,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%8F%9D%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://aeri206.github.io/projects/mdp/">
+    <link rel="canonical" href="https://aeri206.github.io/projects/2_local_explanations/">
 
     <!-- Dark Mode -->
     
@@ -117,16 +117,59 @@
         <div class="post">
 
           <!-- <header class="post-header">
-            <h1 class="post-title">Multidimensional Projection</h1>
-            <p class="post-description">Making projections of high-dimensional data explainable, reliable, and explorable.</p>
+            <h1 class="post-title">Explainable AI</h1>
+            <p class="post-description">Interactive visual explanations that make model behavior understandable.</p>
           </header> -->
           <article>
-            <p>Multidimensional projection (MDP), also called dimensionality reduction, maps high-dimensional data onto a 2D scatterplot. Projections are widely used, but the patterns they show are hard to trust and hard to relate back to the original features.
-My work asks how analysts can <strong>explore</strong> projections interactively, <strong>evaluate</strong> how faithful they are, and <strong>explain</strong> which features shape them.</p>
+            <p>Explanation methods such as LIME and SHAP are widely used, but their outputs are often taken at face value without understanding how they are computed or how to read them.
+I build interactive visualizations that let people see <strong>how</strong> explanations are produced and <strong>what</strong> they actually say about a model.</p>
 
 <h2 id="research">Research</h2>
 
 <div class="publications">
+<ol class="bibliography"><li>
+<!-- _layouts/bib.html -->
+      <!-- Entry bib key -->
+      <div id="cho2025lime" class="publication-content" style="display: flex; gap: 1rem; align-items: flex-start;">
+        <div class="publication-preview" style="flex-shrink: 0; width: 240px; max-width: 240px; height: 180px; max-height: 180px; overflow: hidden; border-radius: 4px; position: relative;">
+          <img src="/assets/img/publication_preview/cho2025lime.png" alt="LIME &amp; SHAP Explained: From Computation to Interpretation" style="width: 100%; height: 100%; object-fit: cover; object-position: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"><div class="abbr-overlay"><abbr class="badge">VISxAI</abbr></div>
+</div>
+        <div style="flex: 1; min-width: 0;">
+        <div class="abbr">
+<span class="pub-type workshop">Workshop</span>
+        </div>
+        <!-- Title -->
+        <div class="title">
+            LIME &amp; SHAP Explained: From Computation to Interpretation
+        </div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <strong>Aeri Cho</strong>, Jeongmin Rhee, Seokhyeon Park, and Jinwook Seo</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em><a href="https://visxai.io/" target="_blank" rel="noopener noreferrer">Workshop on Visualization for AI Explainability (VISxAI) (at IEEE VIS)</a></em>, Oct 2025
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a href="https://aericho.com/explaining-explainable-ml/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Website</a>
+          </div>
+          
+          <div class="badges">
+          </div>
+
+          
+        </div>
+      </div>
+</li></ol>
 <ol class="bibliography"><li>
 <!-- _layouts/bib.html -->
       <!-- Entry bib key -->
@@ -173,110 +216,13 @@ My work asks how analysts can <strong>explore</strong> projections interactively
         </div>
       </div>
 </li></ol>
-<ol class="bibliography"><li>
-<!-- _layouts/bib.html -->
-      <!-- Entry bib key -->
-      <div id="jeon2023zadu" class="publication-content" style="display: flex; gap: 1rem; align-items: flex-start;">
-        <div style="flex: 1; min-width: 0;">
-        <div class="abbr">
-<abbr class="badge">IEEE VIS</abbr><span class="pub-type conference">Conference</span>
-        </div>
-        <!-- Title -->
-        <div class="title">
-            Zadu: A python library for evaluating the reliability of dimensionality reduction embeddings
-        </div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Hyeon Jeon, <strong>Aeri Cho</strong>, Jinhwa Jang, Soohyun Lee, Jake Hyun, Hyung-Kwon Ko, Jaemin Jo, and Jinwook Seo</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em><a href="https://ieeexplore.ieee.org/abstract/document/10360886" target="_blank" rel="noopener noreferrer">2023 IEEE Visualization and Visual Analytics (VIS)</a></em>, Oct 2023
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a href="http://hcil.snu.ac.kr/system/publications/pdfs/000/000/182/original/ZADU_Library__for_VIS_2023_Short__%2818%29.pdf?1691729330" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
-            <a href="https://github.com/hj-n/zadu" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
-          </div>
-          
-          <div class="badges">
-          </div>
-
-          
-        </div>
-      </div>
-</li></ol>
-<ol class="bibliography"><li>
-<!-- _layouts/bib.html -->
-      <!-- Entry bib key -->
-      <div id="jeon2025measuring" class="publication-content" style="display: flex; gap: 1rem; align-items: flex-start;">
-        <div style="flex: 1; min-width: 0;">
-        <div class="abbr">
-<abbr class="badge">IEEE TPAMI</abbr><span class="pub-type journal">Journal</span>
-        </div>
-        <!-- Title -->
-        <div class="title">
-            Measuring the Validity of Clustering Validation Datasets
-        </div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Hyeon Jeon, Michaël Aupetit, DongHwa Shin, <strong>Aeri Cho</strong>, Seokhyeon Park, and Jinwook Seo</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em><a href="https://ieeexplore.ieee.org/abstract/document/10909451" target="_blank" rel="noopener noreferrer">IEEE Transactions on Pattern Analysis and Machine Intelligence</a></em>, Jun 2025
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a href="https://github.com/hj-n/labeled-datasets" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
-            <a href="https://hyeonword.com/clm-home/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Website</a>
-          </div>
-          
-          <div class="badges">
-          </div>
-
-          
-        </div>
-      </div>
-</li></ol>
 </div>
 
 <h2 id="interactive-demos">Interactive Demos</h2>
 
 <ul>
   <li>
-<strong><a href="https://aericho.com/mdp-tour/" rel="external nofollow noopener" target="_blank">Projection Explorer</a></strong> — Tours through projections of benchmark datasets, animating between embeddings and highlighting clusters.</li>
-  <li>
-<strong><a href="https://aericho.com/metric_viewer/" rel="external nofollow noopener" target="_blank">Metric Viewer for MDP</a></strong> — Linked histograms of projection quality metrics (Trustworthiness, Continuity, Steadiness, Cohesiveness, DTM, …). Brush a metric range to filter projections by method.</li>
-  <li>
-<strong><a href="https://aericho.com/mdp-matrix/" rel="external nofollow noopener" target="_blank">Projection Matrix</a></strong> — Matrix visualization comparing many projections of the same data, with seriation (<a href="https://github.com/jdfekete/reorder.js/" rel="external nofollow noopener" target="_blank">reorder.js</a>), sorting by hyperparameters, and an adjustable similarity threshold.</li>
-  <li>
-<strong><a href="https://aericho.com/mdp_pilot/" rel="external nofollow noopener" target="_blank">Projection Comparison Study</a></strong> — Pilot study interface for comparing and ranking multiple projections side by side.</li>
-</ul>
-
-<h2 id="code--datasets">Code &amp; Datasets</h2>
-
-<ul>
-  <li>
-<strong><a href="https://github.com/hj-n/zadu" rel="external nofollow noopener" target="_blank">ZADU</a></strong> — Python library of distortion measures for evaluating the reliability of dimensionality reduction embeddings.</li>
-  <li>
-<strong><a href="https://github.com/hj-n/labeled-datasets" rel="external nofollow noopener" target="_blank">Labeled Datasets</a></strong> — 96 benchmark datasets for external clustering validation, with class-label matching scores (<a href="https://hyeonword.com/clm-home/" rel="external nofollow noopener" target="_blank">project page</a>).</li>
+<strong><a href="https://aericho.com/explaining-explainable-ml/" rel="external nofollow noopener" target="_blank">LIME &amp; SHAP Explained</a></strong> — An interactive visual guide that walks through how LIME and SHAP compute local explanations, step by step, and how to interpret the results (VISxAI 2025).</li>
 </ul>
 
           </article>
