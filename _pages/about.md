@@ -33,4 +33,4 @@ Hi. I'm a Ph.D. student at the [Human-Computer Interaction Lab](http://hcil.snu.
 
 My research focuses on making complex data and AI models more accessible and understandable through interactive visualization and intuitive interactions. I'm particularly interested in helping people explore patterns, understand relationships, and gain meaningful insights from high-dimensional data and model explanations.
 
-I received my B.S. in [Computer Science and Engineering](https://cse.snu.ac.kr/) from [Seoul National University](https://www.snu.ac.kr/) in 2021.
+I received my B.S. in [Computer Science and Engineering](https://cse.snu.ac.kr/) from [Seoul National University](https://www.snu.ac.kr/).
