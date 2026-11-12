@@ -31,6 +31,6 @@ social: true
 Hi. I'm a Ph.D. student at the [Human-Computer Interaction Lab](http://hcil.snu.ac.kr/) at Seoul National University, advised by Professor [Jinwook Seo](http://hcil.snu.ac.kr/people/jinwook-seo). 
 
 
-My research focuses on making complex fields like high-dimensional data and model explainability more human-friendly and accessible through interactive visualization and intuitive data interactions, enabling people to gain meaningful insights.
+My research focuses on making complex data and AI models more accessible and understandable through interactive visualization and intuitive interactions. I'm particularly interested in helping people explore patterns, understand relationships, and gain meaningful insights from high-dimensional data and model explanations.
 
 I received my B.S. in [Computer Science and Engineering](https://cse.snu.ac.kr/) from [Seoul National University](https://www.snu.ac.kr/) in 2021.
